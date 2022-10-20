@@ -35,7 +35,7 @@ keywords = [
     "taskcat",
 ]
 license = "Apache License 2.0"
-readme = ["README.md", "LICENSE"]
+readme = ["README.md", "LICENSE.txt"]
 packages = [{ include = "taskcat" }]
 
 [tool.poetry.scripts]

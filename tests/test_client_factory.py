@@ -2,8 +2,7 @@ import unittest
 from unittest import mock
 
 import boto3
-from botocore.exceptions import (ClientError, NoCredentialsError,
-                                 ProfileNotFound)
+from botocore.exceptions import ClientError, NoCredentialsError, ProfileNotFound
 
 from taskcat._client_factory import Boto3Cache
 from taskcat.exceptions import TaskCatException

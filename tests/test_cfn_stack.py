@@ -6,9 +6,18 @@ from threading import Timer
 from unittest import mock
 
 from taskcat import Config
-from taskcat._cfn.stack import (Event, Events, Output, Parameter, Resource,
-                                Resources, Stack, Tags, TestRegion,
-                                criteria_matches)
+from taskcat._cfn.stack import (
+    Event,
+    Events,
+    Output,
+    Parameter,
+    Resource,
+    Resources,
+    Stack,
+    Tags,
+    TestRegion,
+    criteria_matches,
+)
 from taskcat._dataclasses import Tag
 
 event_template = {

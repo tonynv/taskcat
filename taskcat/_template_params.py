@@ -7,9 +7,11 @@ from typing import Set
 import dulwich
 from dulwich.repo import Repo
 
-from taskcat._common_utils import (CommonTools,
-                                   fetch_secretsmanager_parameter_value,
-                                   fetch_ssm_parameter_value)
+from taskcat._common_utils import (
+    CommonTools,
+    fetch_secretsmanager_parameter_value,
+    fetch_ssm_parameter_value,
+)
 from taskcat.exceptions import TaskCatException
 
 LOG = logging.getLogger(__name__)

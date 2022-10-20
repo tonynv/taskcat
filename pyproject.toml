@@ -5,11 +5,38 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "taskcat"
 version = "0.9.33"
-description = "An OpenSource Multi Region Cloudformation Testing and Deployment Python Module"
-authors = ["Tony Vattathil, Jay McConnell, Andrew Glenn, Santiago Cardenas, Shivansh Singh"]
+description = "An OpenSource Multi Region Cloudformation Testing and Deployment Utilty"
+authors = [
+    "Tony Vattathil <tonynv@amazon.com>",
+    "Jay McConnell <jmmccon@amazon.com>",
+    "Andrew Glenn <andglenn@amazon.com>",
+    "Santiago Cardenas <sancard@amazon.com",
+    "Shivansh Singh <sshvans@amazon.com"
+]
+repository = "https://github.com/aws-ia/taskcat/tarball/main"
+homepage = "https://aws-ia.github.io/taskcat"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Testing",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X ",
+]
+keywords = [
+    "aws",
+    "cloudformation",
+    "cloud",
+    "cloudformation testing",
+    "cloudformation deploy",
+    "taskcat",
+]
 license = "Apache License 2.0"
-readme = "README.md"
-packages = [ { include = "taskcat"} ]
+readme = ["README.md", "LICENSE"]
+packages = [{ include = "taskcat" }]
 
 [tool.poetry.scripts]
 taskcat = "taskcat:main"
@@ -37,3 +64,45 @@ pre-commit = ">=2.20.0,<2.21.0"
 pytest-cov = "^4.0.0"
 codecov = "^2.1.12"
 pip = "^22.3"
+
+[tool.portray.mkdocs.theme]
+favicon = "https://raw.githubusercontent.com/aws-ia/taskcat/main/assets/docs/images/tcat.png"
+logo = "https://raw.githubusercontent.com/aws-ia/taskcat/main/assets/docs/images/tcat.png"
+name = "material"
+palette = { primary = "black", accent = "orange" }
+
+[tool.portray.mkdocs]
+extra_css = ['docs/custom.css']
+
+[[tool.portray.mkdocs.nav]]
+Home = "README.md"
+
+[[tool.portray.mkdocs.nav]]
+Installation = "docs/INSTALLATION.md"
+
+[[tool.portray.mkdocs.nav]]
+
+[[tool.portray.mkdocs.nav.Usage]]
+"General Usage" = "docs/usage/GENERAL_USAGE.md"
+
+[[tool.portray.mkdocs.nav.Usage]]
+"Parameter Overrides" = "docs/usage/PARAMETER_OVERRIDES.md"
+
+[[tool.portray.mkdocs.nav.Usage]]
+"Psuedo Parameters" = "docs/usage/PSUEDO_PARAMETERS.md"
+
+[[tool.portray.mkdocs.nav]]
+"Configuration Schema" = "docs/schema/taskcat_schema.md"
+
+[[tool.portray.mkdocs.nav]]
+
+[[tool.portray.mkdocs.nav.Administrative]]
+"Code of Conduct" = "docs/administrative/CODE_OF_CONDUCT.md"
+
+[[tool.portray.mkdocs.nav.Administrative]]
+"Contributing" = "docs/administrative/CONTRIBUTING.md"
+# [[tool.portray.mkdocs.nav]]
+# Home = "README.md"
+#
+# [[tool.portray.mkdocs.nav]]
+# Usage = "docs/usage/"

@@ -1,8 +1,13 @@
 import unittest
 from unittest import mock
 
-from taskcat._cli import (_print_upgrade_msg, _setup_logging, _welcome,
-                          check_for_update, main)
+from taskcat._cli import (
+    _print_upgrade_msg,
+    _setup_logging,
+    _welcome,
+    check_for_update,
+    main,
+)
 from taskcat.exceptions import TaskCatException
 
 

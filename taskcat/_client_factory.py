@@ -8,8 +8,7 @@ import boto3
 import botocore.loaders as boto_loader
 import botocore.regions as boto_regions
 from botocore.config import Config as BotoConfig
-from botocore.exceptions import (ClientError, NoCredentialsError,
-                                 ProfileNotFound)
+from botocore.exceptions import ClientError, NoCredentialsError, ProfileNotFound
 
 from taskcat.exceptions import TaskCatException
 

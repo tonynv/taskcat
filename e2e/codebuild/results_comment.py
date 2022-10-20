@@ -2,7 +2,6 @@ import os
 import sys
 
 import boto3
-
 from github import Github
 
 SSM_CLIENT = boto3.client("ssm")

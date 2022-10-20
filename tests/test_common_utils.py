@@ -3,20 +3,12 @@ import os
 import unittest
 from unittest import mock
 
-from taskcat._common_utils import (
-    exit_with_code,
-    fetch_ssm_parameter_value,
-    get_s3_domain,
-    make_dir,
-    merge_dicts,
-    name_from_stack_id,
-    param_list_to_dict,
-    pascal_to_snake,
-    region_from_stack_id,
-    s3_bucket_name_from_url,
-    s3_key_from_url,
-    s3_url_maker,
-)
+from taskcat._common_utils import (exit_with_code, fetch_ssm_parameter_value,
+                                   get_s3_domain, make_dir, merge_dicts,
+                                   name_from_stack_id, param_list_to_dict,
+                                   pascal_to_snake, region_from_stack_id,
+                                   s3_bucket_name_from_url, s3_key_from_url,
+                                   s3_url_maker)
 from taskcat.exceptions import TaskCatException
 
 

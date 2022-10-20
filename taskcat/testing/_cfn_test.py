@@ -1,7 +1,8 @@
 # pylint: disable=line-too-long
 import logging
 from pathlib import Path
-from typing import List as ListType, Union
+from typing import List as ListType
+from typing import Union
 
 from taskcat._cfn._log_stack_events import _CfnLogTools
 from taskcat._cfn.threaded import Stacker

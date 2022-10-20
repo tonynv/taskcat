@@ -6,11 +6,8 @@
 
 import sys
 
-from taskcat.project_generator import (
-    FilesystemService,
-    ProjectConfiguration,
-    ProjectGenerator,
-)
+from taskcat.project_generator import (FilesystemService, ProjectConfiguration,
+                                       ProjectGenerator)
 
 DESTINATION = sys.argv[1]
 CONFIG = ProjectConfiguration(

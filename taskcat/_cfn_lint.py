@@ -6,6 +6,7 @@ import cfnlint.core
 import cfnlint.helpers
 from cfnlint.config import ConfigMixIn as CfnLintConfig
 from jsonschema.exceptions import ValidationError
+
 from taskcat._common_utils import neglect_submodule_templates
 from taskcat._config import Config
 from taskcat._dataclasses import Templates

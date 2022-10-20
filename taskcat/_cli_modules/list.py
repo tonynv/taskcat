@@ -1,6 +1,7 @@
 # pylint: disable=duplicate-code
 import logging
-from typing import List as ListType, Union
+from typing import List as ListType
+from typing import Union
 
 import boto3
 

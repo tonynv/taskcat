@@ -3,6 +3,7 @@ import uuid
 from pathlib import Path
 
 from dataclasses_jsonschema import ValidationError
+
 from taskcat._config import Config
 from taskcat._dataclasses import ProjectConfig, TestObj
 from taskcat.exceptions import TaskCatException

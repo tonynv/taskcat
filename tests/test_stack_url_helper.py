@@ -2,6 +2,7 @@ import json
 import unittest
 
 import cfnlint
+
 from taskcat._cfn.stack_url_helper import StackURLHelper
 
 

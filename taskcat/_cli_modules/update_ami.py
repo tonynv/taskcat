@@ -2,11 +2,8 @@ import logging
 import os
 from pathlib import Path
 
-from taskcat._amiupdater import (
-    AMIUpdater,
-    AMIUpdaterCommitNeededException,
-    AMIUpdaterFatalException,
-)
+from taskcat._amiupdater import (AMIUpdater, AMIUpdaterCommitNeededException,
+                                 AMIUpdaterFatalException)
 from taskcat._common_utils import exit_with_code
 from taskcat._config import Config
 

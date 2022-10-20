@@ -4,9 +4,9 @@ from pathlib import Path
 from time import sleep
 from typing import Dict, List, Union
 
+import cfnlint
 from yaml.scanner import ScannerError
 
-import cfnlint
 from taskcat._cfn.stack_url_helper import StackURLHelper
 from taskcat.exceptions import TaskCatException
 

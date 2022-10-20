@@ -8,8 +8,8 @@ from typing import Any, Dict, List, Mapping, NewType, Optional, Union
 from uuid import UUID, uuid5
 
 import boto3
-
 from dataclasses_jsonschema import FieldEncoder, JsonSchemaMixin
+
 from taskcat._cfn.template import Template
 from taskcat._client_factory import Boto3Cache
 from taskcat._common_utils import merge_nested_dict

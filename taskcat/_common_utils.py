@@ -11,8 +11,8 @@ from time import sleep
 import requests
 import yaml
 from botocore.exceptions import ClientError
-
 from dulwich.config import ConfigFile, parse_submodules
+
 from taskcat.exceptions import TaskCatException
 from taskcat.regions_to_partitions import REGIONS
 

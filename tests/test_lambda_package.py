@@ -5,9 +5,9 @@ from shutil import copytree
 from tempfile import mkdtemp
 from unittest.mock import MagicMock, patch
 
+from dulwich.repo import Repo
 from requests.exceptions import ReadTimeout
 
-from dulwich.repo import Repo
 from taskcat._config import Config
 from taskcat._lambda_build import LambdaBuild
 

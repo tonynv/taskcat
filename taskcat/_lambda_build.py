@@ -4,16 +4,16 @@ import shutil
 import tarfile
 import tempfile
 from pathlib import Path
-from subprocess import PIPE, CalledProcessError, run as subprocess_run  # nosec
+from subprocess import PIPE, CalledProcessError
+from subprocess import run as subprocess_run  # nosec
 from uuid import UUID, uuid5
-
-from requests.exceptions import ReadTimeout
 
 import docker
 from docker import APIClient
 from dulwich.diff_tree import tree_changes
 from dulwich.errors import NotGitRepository
 from dulwich.repo import Repo
+from requests.exceptions import ReadTimeout
 
 from ._config import Config
 from .exceptions import TaskCatException

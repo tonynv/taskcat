@@ -6,6 +6,7 @@ from pathlib import Path
 
 from dulwich import porcelain
 from dulwich.config import ConfigFile, parse_submodules
+
 from taskcat._cli_modules.test import Test
 from taskcat._dataclasses import Tag
 from taskcat._name_generator import generate_name

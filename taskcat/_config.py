@@ -9,16 +9,9 @@ from botocore.exceptions import ClientError
 
 from taskcat._cfn.template import Template, tcat_template_cache
 from taskcat._client_factory import Boto3Cache
-from taskcat._dataclasses import (
-    BaseConfig,
-    RegionObj,
-    S3BucketObj,
-    Tag,
-    TestObj,
-    TestRegion,
-    generate_bucket_name,
-    generate_regional_bucket_name,
-)
+from taskcat._dataclasses import (BaseConfig, RegionObj, S3BucketObj, Tag,
+                                  TestObj, TestRegion, generate_bucket_name,
+                                  generate_regional_bucket_name)
 from taskcat._legacy_config import legacy_overrides, parse_legacy_config
 from taskcat._template_params import ParamGen
 from taskcat.exceptions import TaskCatException

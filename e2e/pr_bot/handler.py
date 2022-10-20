@@ -4,7 +4,6 @@ import os
 import traceback
 
 import boto3
-
 from github import Github
 
 LOG = logging.getLogger(__name__)

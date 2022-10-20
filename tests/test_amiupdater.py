@@ -8,21 +8,14 @@ from unittest.mock import Mock, patch, sentinel
 
 import requests
 
-from taskcat._amiupdater import (
-    REGION_REGEX,
-    AMIUpdater,
-    AMIUpdaterCommitNeededException,
-    AMIUpdaterFatalException,
-    Config as AUConfig,
-    EC2FilterValue,
-    RegionalCodename,
-    Template,
-    _construct_filters,
-    _image_timestamp,
-    build_codenames,
-    query_codenames,
-    reduce_api_results,
-)
+from taskcat._amiupdater import (REGION_REGEX, AMIUpdater,
+                                 AMIUpdaterCommitNeededException,
+                                 AMIUpdaterFatalException)
+from taskcat._amiupdater import Config as AUConfig
+from taskcat._amiupdater import (EC2FilterValue, RegionalCodename, Template,
+                                 _construct_filters, _image_timestamp,
+                                 build_codenames, query_codenames,
+                                 reduce_api_results)
 from taskcat._config import Config
 from taskcat.exceptions import TaskCatException
 

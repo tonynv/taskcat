@@ -1,41 +1,33 @@
-[tool.portray.mkdocs.theme]
-favicon = "https://raw.githubusercontent.com/aws-ia/taskcat/main/assets/docs/images/tcat.png"
-logo = "https://raw.githubusercontent.com/aws-ia/taskcat/main/assets/docs/images/tcat.png"
-name = "material"
-palette = {primary = "black", accent = "orange"}
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
-[tool.portray.mkdocs]
-extra_css = ['docs/custom.css']
+[tool.poetry]
+name = "taskcat"
+version = "0.9.33"
+description = "An OpenSource Multi Region Cloudformation Testing and Deployment Python Module"
+authors = ["Tony Vattathil, Jay McConnell, Andrew Glenn, Santiago Cardenas, Shivansh Singh"]
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [ { include = "taskcat"} ]
 
-[[tool.portray.mkdocs.nav]]
-Home = "README.md"
+[tool.poetry.scripts]
+taskcat = "taskcat:main"
 
-[[tool.portray.mkdocs.nav]]
-Installation = "docs/INSTALLATION.md"
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.24.94"
+reprint = "^0.6.0"
+tabulate = "^0.9.0"
+cfn-lint = "0.66.1"
+docker = ">=4.0,<5.0"
+dulwich = ">=0.19,<1.0"
+botocore = ">=1.12.21,<2.0"
+jinja2 = ">=3.1.1,<4.0"
+requests = "^2.28.1"
+pyyaml = ">=5.1,<6.0"
+markupsafe = "^2.1.1"
+dataclasses-jsonschema = ">=2.9.0,<2.15.2"
+yattag = "^1.14.0"
 
-
-[[tool.portray.mkdocs.nav]]
-    [[tool.portray.mkdocs.nav.Usage]]
-        "General Usage" = "docs/usage/GENERAL_USAGE.md"
-
-    [[tool.portray.mkdocs.nav.Usage]]
-        "Parameter Overrides" = "docs/usage/PARAMETER_OVERRIDES.md"
-
-    [[tool.portray.mkdocs.nav.Usage]]
-        "Psuedo Parameters" = "docs/usage/PSUEDO_PARAMETERS.md"
-
-[[tool.portray.mkdocs.nav]]
-"Configuration Schema" = "docs/schema/taskcat_schema.md"
-
-[[tool.portray.mkdocs.nav]]
-    [[tool.portray.mkdocs.nav.Administrative]]
-        "Code of Conduct" = "docs/administrative/CODE_OF_CONDUCT.md"
-
-    [[tool.portray.mkdocs.nav.Administrative]]
-        "Contributing" = "docs/administrative/CONTRIBUTING.md"
-
-# [[tool.portray.mkdocs.nav]]
-# Home = "README.md"
-#
-# [[tool.portray.mkdocs.nav]]
-# Usage = "docs/usage/"
+[tool.poetry.group.dev.dependencies]

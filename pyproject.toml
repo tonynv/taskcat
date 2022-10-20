@@ -31,3 +31,9 @@ dataclasses-jsonschema = ">=2.9.0,<2.15.2"
 yattag = "^1.14.0"
 
 [tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pylint = ">=2.3,<3.0"
+pre-commit = ">=2.20.0,<2.21.0"
+pytest-cov = "^4.0.0"
+codecov = "^2.1.12"
+pip = "^22.3"
